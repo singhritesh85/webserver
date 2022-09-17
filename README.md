@@ -2,7 +2,7 @@
 create virtual hosting for webserver
 
 
-# cat /etc/httpd/conf.d/myweb.conf
+cat /etc/httpd/conf.d/myweb.conf
 ```
 <VirtualHost *:80>
 ServerAdmin  rksgoal@gmail.com
