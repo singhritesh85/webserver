@@ -1,6 +1,12 @@
-# webserver
-create virtual hosting for webserver
+# Install and configure httpd webserver in RHEL8
 
+yum install httpd mod_ssl -y && systemctl start httpd && systemctl enable httpd && mkdir /var/www/html/webserver
+yum install vim wget git -y
+
+vim /var/www/html/webserver/index.html
+Write Something in this File which you want as a web page
+
+setenforce 0
 
 cat /etc/httpd/conf.d/myweb.conf
 ```
@@ -33,3 +39,5 @@ AllowOverride none
 Require all granted
 </Directory>
 ```
+
+systemctl restart httpd
