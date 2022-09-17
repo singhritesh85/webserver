@@ -1,6 +1,7 @@
 # Install and configure httpd webserver in RHEL8
 
 yum install httpd mod_ssl -y && systemctl start httpd && systemctl enable httpd && mkdir /var/www/html/webserver
+
 yum install vim wget git -y
 
 vim /var/www/html/webserver/index.html
