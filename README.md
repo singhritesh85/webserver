@@ -5,6 +5,7 @@ yum install httpd mod_ssl -y && systemctl start httpd && systemctl enable httpd 
 yum install vim wget git -y
 
 vim /var/www/html/webserver/index.html
+
 Write Something in this File which you want as a web page
 
 setenforce 0
